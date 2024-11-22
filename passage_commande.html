@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passage Commande</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <div class="header-logo">
+            <img src="logo.png" alt="Logo du magasin" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="passage_commande.html" class="active">Passage Commande</a></li>
+                <li><a href="aide.html">Aide</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main class="passage-commande">
+        <h1>Passage Commande</h1>
+        <p>Choisissez le type de commande que vous souhaitez passer :</p>
+        <div class="commande-options">
+            <div class="option" onclick="window.location.href='commande_corbeille.html'">
+                <img src="plateau.jpg" alt="Commande Corbeille">
+                <h2>Commande Corbeille</h2>
+            </div>
+            <div class="option" onclick="window.location.href='commande_sac.html'">
+                <img src="sac.jpg" alt="Commande Sac">
+                <h2>Commande Sac</h2>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Nom - Magasin de Fruits</p>
+    </footer>
+</body>
+</html>

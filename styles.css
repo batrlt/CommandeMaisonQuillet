@@ -1,0 +1,447 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Header du logo */
+.header-logo {
+    background-color: #D4C4A8;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-logo .logo {
+    width: 400px;
+    height: auto;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #D4C4A8;
+}
+
+/* Section Passage Commande */
+.section-commande {
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.section-commande h2 {
+    font-size: 8em;
+    margin: 0 0 20px;
+}
+
+.section-commande button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #D4C4A8;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-commande button:hover {
+    background-color: #b9a28c;
+}
+
+/* Section Qui Sommes Nous */
+
+/* Styles généraux pour la section "Qui sommes-nous" */
+.about-us {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Mise en page avec l'image à gauche et le texte à droite */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 40%; /* Limiter l'image à 40% de la largeur */
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+    flex: 2; /* Le texte prend plus d'espace que l'image */
+    max-width: 60%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-description p {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Styles pour le bouton */
+.about-description button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c4a484;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.about-description button:hover {
+    background-color: #b3926f;
+}
+
+/* Responsive : ajustement pour les écrans plus petits */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 80%; /* Ajuste l'image pour qu'elle soit bien visible sur mobile */
+        margin-right: 0;
+        margin-bottom: 20px; /* Espacement entre image et texte */
+    }
+
+    .about-description {
+        max-width: 100%;
+        text-align: justify;
+    }
+}
+
+
+/* Flex container for image and logo */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #D4C4A8;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #b9a28c;
+}
+
+
+/* Section Contact */
+.section-contact {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.instagram-preview {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f8f8; /* Ajuste cette couleur selon ton thème */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-preview h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.instagram-preview iframe {
+    border: none;
+    border-radius: 10px; /* Coins arrondis pour l'iframe */
+}
+
+
+/* Section Où Nous Trouver */
+.section-location {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Section Avis Clients */
+.section-reviews {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #D4C4A8;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px; /* Pour laisser un petit espace sur les bords */
+    box-sizing: border-box;
+}
+
+/* Styles pour la page Passage Commande */
+.passage-commande {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.passage-commande h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.passage-commande p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Options de commande */
+.commande-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 200px;
+}
+
+.option img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.option h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Command Section */
+.command-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.command-section h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.command-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.product .price {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
