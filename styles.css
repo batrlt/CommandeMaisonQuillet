@@ -8,6 +8,8 @@ body {
     width: 100%;
 }
 
+
+
 /* Header du logo */
 .header-logo {
     background-color: #D4C4A8;
@@ -61,8 +63,9 @@ body {
 }
 
 .section-commande h2 {
-    font-size: 8em;
-    margin: 0 0 20px;
+    font-size: 4vw;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .section-commande button {
@@ -150,6 +153,9 @@ body {
 
 /* Responsive : ajustement pour les écrans plus petits */
 @media (max-width: 768px) {
+    h2 {
+        font-size: 8vw; /* Agrandit légèrement le texte sur les tablettes */
+    }
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -166,6 +172,7 @@ body {
         text-align: justify;
     }
 }
+
 
 
 /* Flex container for image and logo */
